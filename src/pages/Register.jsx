@@ -18,7 +18,7 @@ const Register = () => {
 
     const handleRegister = async () => {
         try {
-            const response = await api.post(`${url}/api/register`, {
+            const response = await api.post(`/register`, {
                 name: user.username,
                 email: user.email,
                 role: user.role,
