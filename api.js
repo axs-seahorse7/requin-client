@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: "https://requin-server.vercel.app/",
+  baseURL: "https://requin-server.vercel.app/api",
 });
 
 // Request Interceptor
