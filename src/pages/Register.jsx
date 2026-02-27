@@ -2,6 +2,7 @@ import {useState} from 'react'
 import axios from 'axios'
 import { useNavigate } from 'react-router-dom';
 import {message} from 'antd'
+import api from '../../api';
 
 
 const Register = () => {
@@ -17,7 +18,7 @@ const Register = () => {
 
     const handleRegister = async () => {
         try {
-            const response = await axios.post(`${url}/api/register`, {
+            const response = await api.post(`${url}/api/register`, {
                 name: user.username,
                 email: user.email,
                 role: user.role,
